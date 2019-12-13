@@ -2,14 +2,14 @@
  * @author msfata ProgrammingHelp UTube
  * */
 public class Generic<T> {
-	private T carName;
+	private T data;
 
-	public Generic(T carName) {
-		this.carName = carName;
+	public Generic(T data) {
+		this.data = data;
 	}
 
 	public T getData() {
-		return this.carName;
+		return this.data;
 	}
 
 	public static void main(String[] args) {
