@@ -1,0 +1,26 @@
+/*
+ * @author msfata ProgrammingHelp UTube
+ * */
+public class Generic<T> {
+	private T carName;
+
+	public Generic(T carName) {
+		this.carName = carName;
+	}
+
+	public T getData() {
+		return this.carName;
+	}
+
+	public static void main(String[] args) {
+		Generic<String> name = new Generic<String>("Volvo");
+		Generic<Integer> price = new Generic<Integer>(12500);
+		Generic<Double> speed = new Generic<Double>(220.0);
+		Generic<Boolean> isAvailable = new Generic<Boolean>(true);
+
+		System.out.println("Car Name         : " + name.getData());
+		System.out.println("Car Price        : " + price.getData() + " GBP");
+		System.out.println("Car Speed        : " + speed.getData() + " MPH");
+		System.out.println("Car Availability : " + isAvailable.getData());
+	}
+}
